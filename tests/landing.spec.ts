@@ -7,6 +7,8 @@ test('the page loads with working assets, metadata, and no horizontal overflow',
   await page.goto('/');
   await expect(page).toHaveTitle(/Puertas cortafuego y de emergencia/);
   await expect(page.locator('h1')).toContainText('buena puerta');
+  await expect(page.locator('#certification-title')).toHaveText('Homologación INTI — FR30, FR60, FR90 y FR120');
+  await expect(page.locator('.contact-location')).toContainText('Enrique Santamarina 923, Monte Grande');
   await page.locator('footer').scrollIntoViewIfNeeded();
   await page.waitForFunction(() => Array.from(document.images).every((image) => image.complete && image.naturalWidth > 0));
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);

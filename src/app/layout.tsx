@@ -5,7 +5,7 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: 'Puertas cortafuego y de emergencia | Montiuk',
-  description: 'Puertas cortafuego certificadas por el INTI, puertas de emergencia y accesorios. Asesoramiento para tu obra y envíos a todo el país. Pedí tu presupuesto en Montiuk.',
+  description: 'Puertas cortafuego con homologación INTI FR30, FR60, FR90 y FR120, puertas de emergencia y accesorios. Asesoramiento para tu obra y envíos a todo el país.',
   alternates: { canonical: '/' },
   icons: { icon: '/favicon.svg' },
   openGraph: {
